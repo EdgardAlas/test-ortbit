@@ -1,0 +1,26 @@
+.footer {
+  margin-top: 2rem;
+  background-color: #292929;
+  font-size: 0.727rem;
+
+  .links,
+  .copy {
+    padding: 1rem;
+
+    @include media-query(md) {
+      padding-left: 10rem;
+    }
+  }
+
+  .links {
+    @include flex-box($gap: 1rem, $justify: space-between);
+
+    @include media-query(md) {
+      justify-content: flex-start;
+    }
+  }
+
+  .copy {
+    background-color: #1f1f1f;
+  }
+}

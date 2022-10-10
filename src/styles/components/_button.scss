@@ -1,0 +1,56 @@
+.btn {
+  color: $white;
+  border: none;
+  background-color: $light-blue;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  @include flex-box($flex: inline-flex, $gap: 0.5rem);
+  font-weight: 700;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    display: block;
+    width: 15px;
+    height: 200px;
+    background-color: rgba($color: $white, $alpha: 0.3);
+    transform: translateY(-50%) rotate(45deg);
+    box-shadow: 0 0 10px -10px $white;
+    transition: left 0.3s ease;
+  }
+  &:hover {
+    &::before {
+      left: 150%;
+    }
+  }
+
+  &--blue {
+    color: $white;
+    background-color: $light-blue;
+  }
+
+  &--dark {
+    color: #bbbbbb;
+    background-color: #292929;
+  }
+
+  &--dark-blue {
+    background-color: $dark-blue;
+    color: $white;
+  }
+
+  &--orange {
+    background-color: $orange;
+    color: $white;
+  }
+}

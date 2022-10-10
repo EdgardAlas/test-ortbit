@@ -1,0 +1,23 @@
+.btn-scroll-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: $white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+  color: $light-blue;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 5px 10px 2px $light-blue;
+  z-index: 9999;
+
+  &:hover {
+    color: $white;
+    background-color: $light-blue;
+    transform: translateY(-1rem);
+  }
+}

@@ -1,0 +1,17 @@
+.proposal-section {
+  height: 421px;
+  width: 100%;
+  @include flex-box;
+
+  // button {
+  //   background-color: $orange;
+  //   color: $white;
+  //   border: none;
+  //   border-radius: 0.5rem;
+  //   padding: 1rem 2rem;
+
+  //   &:hover {
+  //     background-color: darken($color: $orange, $amount: 1);
+  //   }
+  // }
+}

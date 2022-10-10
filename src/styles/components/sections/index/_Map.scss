@@ -1,0 +1,72 @@
+.google-map {
+  width: 100%;
+  height: 250px;
+}
+
+.section__map-useful-liks {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  p {
+    font-size: 22px;
+  }
+
+  @include media-query(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h3 {
+    margin: 0;
+    text-align: center;
+    @include media-query(lg) {
+      text-align: left;
+    }
+  }
+}
+
+.section__usefull-links {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+
+  ul {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @include media-query(lg) {
+      height: 300px;
+    }
+
+    a {
+      text-decoration: none;
+      transition: width 0.3s;
+      position: relative;
+
+      &:visited,
+      &:link {
+        color: #bbb;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        transition: width 0.2s ease;
+        border-top: 1px solid #bbb;
+        left: 0;
+        bottom: -2px;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

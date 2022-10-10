@@ -1,0 +1,16 @@
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  place-items: start;
+
+  & section:first-child,
+  & section:last-child {
+    width: 100%;
+  }
+
+  @include media-query(lg) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}

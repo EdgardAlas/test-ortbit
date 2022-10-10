@@ -1,0 +1,44 @@
+$white: #fff;
+$black: #000;
+$light-blue: #2ea3f2;
+$dark-blue: #0c71c3;
+$orange: #ffa727;
+
+.white {
+  color: $white;
+}
+.black {
+  color: $black;
+}
+
+.light-blue {
+  color: $light-blue;
+}
+
+.dark-blue {
+  color: $dark-blue;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-dark-blue {
+  background-color: $dark-blue;
+}
+
+.bg-light-blue {
+  background-color: $light-blue;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+body {
+  color: $white;
+}

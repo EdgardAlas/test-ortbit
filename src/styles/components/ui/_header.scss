@@ -1,0 +1,9 @@
+.header {
+  &__logo {
+    padding-left: 3rem;
+    @include media-query(md) {
+      margin-left: 10rem;
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.video-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  place-items: start;
+
+  @include media-query(lg) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .video {
+    width: 240px;
+    height: 140px;
+
+    @include media-query(md) {
+      width: 320px;
+      height: 240px;
+    }
+
+    @include media-query(xl) {
+      width: 420px;
+      height: 340px;
+    }
+  }
+  &__video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

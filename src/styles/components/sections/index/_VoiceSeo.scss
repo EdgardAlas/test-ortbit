@@ -1,0 +1,17 @@
+.section__cols {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include media-query(lg) {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .section__title,
+  .section__subtitle {
+    text-align: center;
+
+    @include media-query(lg) {
+      text-align: left;
+    }
+  }
+}
